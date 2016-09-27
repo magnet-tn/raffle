@@ -5,4 +5,4 @@ This is my interpretation of the raffle exercise. It is heavily influenced by th
 
 This exercise helped me understand how to think about arrays for my P2 project.
 
-On a subsequent version, [fill in later]
+On a subsequent version, the data results can be dumped into a file.
