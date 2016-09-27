@@ -19,8 +19,12 @@ $contestants = [];
 // echo "</pre>";
 
 foreach($_GET as $inputContestant => $contestantName) {
+    if($contestantName !=""){
     $contestants[$contestantName] = 'loser';
 }
-
-$winner = array_rand($contestants, 1);
-$contestants[$winner] = "winner";
+}
+    $winner = array_rand($contestants,1);
+    $contestants[$winner] = "winner";
+if($winner == ""){
+        $contestants[$winner] = "none";
+}
