@@ -18,7 +18,14 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 
     <h1>Raffle Application: </h1>
 
-
+    <table border=1>
+        <?php foreach($contestants as $name => $status): ?>
+            <tr>
+                <td><?php echo $name ?></td>
+                <td><?php echo $status ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </table>
 
 </body>
 </html>
